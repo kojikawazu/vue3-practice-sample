@@ -12,7 +12,7 @@ import App from './App.vue';
 import router from './router';
 
 // Font Awesomeのアイコンを登録
-library.add(faTrash, faPen,faTwitter, faGithub);
+library.add(faTrash, faPen, faTwitter, faGithub);
 
 const app = createApp(App);
 

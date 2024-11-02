@@ -23,6 +23,11 @@ const router = createRouter({
             name: 'todo',
             component: () => import('@/views/todo/TodoView.vue'),
         },
+        {
+            path: CommonConstants.URL.COMMENTS,
+            name: 'comments',
+            component: () => import('@/views/comments/CommentView.vue'),
+        },
     ],
 });
 

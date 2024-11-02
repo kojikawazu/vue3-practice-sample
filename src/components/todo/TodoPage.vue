@@ -5,16 +5,16 @@ const { todos, inputValue, addTodo, toggleTodo, editTodo, deleteTodo } = useTodo
 const editingId = ref<number | null>(null);
 const editText = ref('');
 
-const startEditing = (todo: { id: number, text: string }) => {
-  editingId.value = todo.id;
-  editText.value = todo.text;
+const startEditing = (todo: { id: number; text: string }) => {
+    editingId.value = todo.id;
+    editText.value = todo.text;
 };
 
 const saveEdit = (id: number) => {
-  if (editText.value.trim()) {
-    editTodo(id, editText.value);
-  }
-  editingId.value = null;
+    if (editText.value.trim()) {
+        editTodo(id, editText.value);
+    }
+    editingId.value = null;
 };
 </script>
 
@@ -86,7 +86,6 @@ const saveEdit = (id: number) => {
                                 <font-awesome-icon icon="trash" />
                             </button>
                         </div>
-                        
                     </li>
                 </ul>
             </div>
