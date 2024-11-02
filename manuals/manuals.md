@@ -53,3 +53,15 @@ export default {
 // Tailwind CSSの読み込み を追加
 import './assets/tailwind.css';
 ```
+
+## e2eテストの実行
+
+```bash
+# Playwrightのインストール
+npx playwright install
+```
+
+```bash
+# e2eテストの実行
+npx playwright test --ui
+```

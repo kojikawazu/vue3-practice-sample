@@ -14,8 +14,7 @@ export function useComments() {
         try {
             comments.value = await fetchComments();
         } catch (e) {
-            console.error(e);
-            error.value = '読み込みに失敗しました';
+            error.value = e instanceof Error ? e.message : 'エラーが発生しました';
         } finally {
             isLoading.value = false;
         }

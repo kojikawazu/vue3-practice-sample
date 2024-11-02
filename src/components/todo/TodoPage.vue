@@ -59,6 +59,7 @@ const saveEdit = (id: number) => {
                                     'line-through text-[#94a3b8]': todo.completed,
                                     'text-white': !todo.completed,
                                 }"
+                                data-testid="todo-text"
                             >
                                 {{ todo.text }}
                             </span>
@@ -68,6 +69,7 @@ const saveEdit = (id: number) => {
                                 @blur="saveEdit(todo.id)"
                                 @keyup.enter="saveEdit(todo.id)"
                                 @keyup.esc="editingId = null"
+                                data-testid="todo-edit-input"
                                 className="bg-[#1e293b] text-white px-2 py-1 rounded focus:outline-none focus:ring-1 focus:ring-[#60a5fa]"
                             />
                         </div>
