@@ -36,6 +36,14 @@ import { AppConfig, CommonConstants } from '@/config/constants';
                             {{ CommonConstants.PAGE.COMMENTS }}
                         </a>
                     </li>
+                    <li>
+                        <a
+                            :href="CommonConstants.URL.CONTACT"
+                            className="text-[#94a3b8] hover:text-white transition-colors"
+                        >
+                            {{ CommonConstants.PAGE.CONTACT }}
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
