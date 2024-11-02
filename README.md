@@ -11,6 +11,15 @@
 [![Vite](https://img.shields.io/badge/Vite-4.x-brightgreen.svg)](https://vitejs.dev/)
 [![Pinia](https://img.shields.io/badge/Pinia-2.x-brightgreen.svg)](https://pinia.vuejs.org/)
 [![Axios](https://img.shields.io/badge/Axios-1.x-brightgreen.svg)](https://axios-http.com/)
+[![Teleport](https://img.shields.io/badge/Teleport-2.x-brightgreen.svg)](https://teleport.vuejs.org/)
+[![Pinia Persist](https://img.shields.io/badge/Pinia_Persist-2.x-brightgreen.svg)](https://github.com/prazdevs/pinia-plugin-persistedstate)
+[![Playwright](https://img.shields.io/badge/Playwright-1.x-brightgreen.svg)](https://playwright.dev/)
+
+# Sample
+
+-   Todo
+-   Fetch
+-   Contact
 
 ## Command
 
