@@ -22,6 +22,21 @@ const router = createRouter({
             name: 'comments',
             component: () => import('@/views/comments/CommentView.vue'),
         },
+        {
+            path: CommonConstants.URL.CONTACT,
+            name: 'contact',
+            component: () => import('@/views/contact/form/ContactFormView.vue'),
+        },
+        {
+            path: CommonConstants.URL.CONTACT_CONFIRM,
+            name: 'contact-confirm',
+            component: () => import('@/views/contact/confirm/ContactConfirmView.vue'),
+        },
+        {
+            path: CommonConstants.URL.CONTACT_COMPLETE,
+            name: 'contact-complete',
+            component: () => import('@/views/contact/complete/ContactCompleteView.vue'),
+        },
     ],
 });
 
