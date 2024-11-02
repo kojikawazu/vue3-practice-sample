@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import type { ContactFormData } from '@/types/contact';
-import { useContactFormStore } from '@/stores/contactForm'
+import { useContactFormStore } from '@/stores/contactForm';
 
 // ルーター
 const router = useRouter();
@@ -10,7 +10,7 @@ const router = useRouter();
 const contactFormStore = useContactFormStore();
 
 // フォームデータ
-let formData = ref<ContactFormData>({
+const formData = ref<ContactFormData>({
     name: '',
     email: '',
     subject: '',

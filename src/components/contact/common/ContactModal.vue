@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // プロパティ
 defineProps<{
-  isModalOpen: boolean
+    isModalOpen: boolean;
 }>();
 
 // イベント
@@ -13,9 +13,7 @@ const closeModal = () => emit('close');
 const handleSubmit = () => emit('submit');
 </script>
 
-/**
- * モーダル
- */
+/** * モーダル */
 <template>
     <Teleport to="body">
         <div v-if="isModalOpen" className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">

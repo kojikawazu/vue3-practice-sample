@@ -16,6 +16,6 @@ export function useModal() {
     const closeModal = () => {
         isModalOpen.value = false;
     };
-    
+
     return { isModalOpen, openModal, closeModal };
 }

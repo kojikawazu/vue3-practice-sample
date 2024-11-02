@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-import { useContactFormStore } from '@/stores/contactForm'
+import { useContactFormStore } from '@/stores/contactForm';
 import { useModal } from '@/composables/useModal';
 import ContactModal from '@/components/contact/common/ContactModal.vue';
 
@@ -36,19 +36,19 @@ const handleSubmit = () => {
                 <div className="space-y-4">
                     <div>
                         <p className="text-sm text-[#94a3b8]">お名前</p>
-                        <p className="font-medium text-white">{{ formData.name || "未入力" }}</p>
+                        <p className="font-medium text-white">{{ formData.name || '未入力' }}</p>
                     </div>
                     <div>
                         <p className="text-sm text-[#94a3b8]">メールアドレス</p>
-                        <p className="font-medium text-white">{{ formData.email || "未入力" }}</p>
+                        <p className="font-medium text-white">{{ formData.email || '未入力' }}</p>
                     </div>
                     <div>
                         <p className="text-sm text-[#94a3b8]">件名</p>
-                        <p className="font-medium text-white">{{ formData.subject || "未入力" }}</p>
+                        <p className="font-medium text-white">{{ formData.subject || '未入力' }}</p>
                     </div>
                     <div>
                         <p className="text-sm text-[#94a3b8]">メッセージ</p>
-                        <p className="font-medium text-white whitespace-pre-wrap">{{ formData.message || "未入力" }}</p>
+                        <p className="font-medium text-white whitespace-pre-wrap">{{ formData.message || '未入力' }}</p>
                     </div>
                     <div className="flex space-x-4 mt-6">
                         <button
@@ -70,9 +70,5 @@ const handleSubmit = () => {
     </main>
 
     <!-- 確認モーダル -->
-    <ContactModal 
-        :isModalOpen="isModalOpen" 
-        @close="closeModal" 
-        @submit="handleSubmit"
-    />
+    <ContactModal :isModalOpen="isModalOpen" @close="closeModal" @submit="handleSubmit" />
 </template>
