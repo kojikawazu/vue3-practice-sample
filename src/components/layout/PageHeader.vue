@@ -13,13 +13,27 @@ import { AppConfig, CommonConstants } from '@/config/constants';
             <nav>
                 <ul className="flex space-x-8">
                     <li>
-                        <a :href="CommonConstants.URL.HOME" className="text-[#94a3b8] hover:text-white transition-colors">
+                        <a
+                            :href="CommonConstants.URL.HOME"
+                            className="text-[#94a3b8] hover:text-white transition-colors"
+                        >
                             {{ CommonConstants.PAGE.HOME }}
                         </a>
                     </li>
                     <li>
-                        <a :href="CommonConstants.URL.TODO" className="text-[#94a3b8] hover:text-white transition-colors">
+                        <a
+                            :href="CommonConstants.URL.TODO"
+                            className="text-[#94a3b8] hover:text-white transition-colors"
+                        >
                             {{ CommonConstants.PAGE.TODO }}
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            :href="CommonConstants.URL.COMMENTS"
+                            className="text-[#94a3b8] hover:text-white transition-colors"
+                        >
+                            {{ CommonConstants.PAGE.COMMENTS }}
                         </a>
                     </li>
                 </ul>

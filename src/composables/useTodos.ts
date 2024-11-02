@@ -27,9 +27,7 @@ export function useTodos() {
     };
 
     const editTodo = (id: number, newText: string) => {
-        todos.value = todos.value.map(todo => 
-          todo.id === id ? { ...todo, text: newText } : todo
-        );
+        todos.value = todos.value.map(todo => (todo.id === id ? { ...todo, text: newText } : todo));
     };
 
     const deleteTodo = (id: number) => {

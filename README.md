@@ -10,6 +10,7 @@
 [![Font Awesome](https://img.shields.io/badge/Font_Awesome-6.x-brightgreen.svg)](https://fontawesome.com/)
 [![Vite](https://img.shields.io/badge/Vite-4.x-brightgreen.svg)](https://vitejs.dev/)
 [![Pinia](https://img.shields.io/badge/Pinia-2.x-brightgreen.svg)](https://pinia.vuejs.org/)
+[![Axios](https://img.shields.io/badge/Axios-1.x-brightgreen.svg)](https://axios-http.com/)
 
 ## Command
 
@@ -24,3 +25,7 @@ npm install
 ```
 npm run dev
 ```
+
+## 参考
+
+-   [![JSONPlaceholder](https://img.shields.io/badge/JSONPlaceholder-1.0-brightgreen.svg)](https://jsonplaceholder.typicode.com)
