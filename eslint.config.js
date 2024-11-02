@@ -28,4 +28,8 @@ export default [
     files: ['e2e/**/*.{test,spec}.{js,ts,jsx,tsx}'],
   },
   skipFormatting,
+  {
+    name: "ignorePatterns",
+    ignores: ["playwright-report/**", "test-results/**"]
+  },
 ]

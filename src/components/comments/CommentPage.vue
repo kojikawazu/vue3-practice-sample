@@ -14,9 +14,9 @@ onMounted(() => {
             <div className="p-8">
                 <h2 className="text-3xl font-bold text-white mb-6 font-roboto">コメント一覧</h2>
 
-                <div v-if="isLoading" class="text-center">読み込み中...</div>
+                <div v-if="isLoading" data-testid="loading" class="text-center">読み込み中...</div>
 
-                <div v-else-if="error" class="text-red-500">
+                <div v-else-if="error" data-testid="error" class="text-red-500">
                     {{ error }}
                 </div>
 
@@ -24,12 +24,13 @@ onMounted(() => {
                     <div
                         v-for="comment in comments"
                         :key="comment.id"
+                        data-testid="comment-card"
                         class="p-6 bg-gray-800 rounded-xl border border-gray-700 shadow-lg hover:border-gray-600 transition-colors"
                     >
                         <div class="flex flex-col gap-3">
-                            <h3 class="font-bold text-white">name: {{ comment.name }}</h3>
-                            <p class="text-gray-300">email: {{ comment.email }}</p>
-                            <p class="mt-2 text-gray-200">body: {{ comment.body }}</p>
+                            <h3 data-testid="comment-name" class="font-bold text-white">name: {{ comment.name }}</h3>
+                            <p data-testid="comment-email" class="text-gray-300">email: {{ comment.email }}</p>
+                            <p data-testid="comment-body" class="mt-2 text-gray-200">body: {{ comment.body }}</p>
                         </div>
                     </div>
                 </div>
